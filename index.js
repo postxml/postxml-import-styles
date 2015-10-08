@@ -3,7 +3,7 @@ var fs = require('fs'),
 
 module.exports = function (cwd) {
     return function ($) {
-        $('link').each(function () {
+        $('link[rel=stylesheet]').each(function () {
             var src = $(this).attr('href'),
                 path = src,
                 file = '',
